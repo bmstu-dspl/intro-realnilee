@@ -13,8 +13,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: Name and group check
-      id: name-and-group-check
+    - name: Name and group
+      id: name-and-group
       uses: classroom-resources/autograding-python-grader@v1
       with:
         timeout: 10
@@ -22,6 +22,6 @@ jobs:
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        NAME-AND-GROUP-CHECK_RESULTS: "${{steps.name-and-group-check.outputs.result}}"
+        NAME-AND-GROUP_RESULTS: "${{steps.name-and-group.outputs.result}}"
       with:
-        runners: name-and-group-check
+        runners: name-and-group
