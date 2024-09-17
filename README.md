@@ -116,5 +116,7 @@ You can check out the GitHub Explore website [at github.com/explore](https://git
 * [Education community forum](https://education.github.community/)
 * [GitHub community forum](https://github.community/)
 
+## Signature
 ФИО: Маслюк Николай Станиславович
+
 Группа: ИУ6-35Б
